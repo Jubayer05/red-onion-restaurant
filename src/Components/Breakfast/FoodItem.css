@@ -1,0 +1,42 @@
+.food_item-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-content: center;
+align-items: center;
+grid-gap: 20px;
+padding: 50px 100px;
+}
+
+.food_item {
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.food_item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 10px 10px  rgba(0, 0, 0, 0.13);
+} 
+
+.item_image {
+    width: 45%;
+}
+
+.item_title {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px 0 7px 0;
+}
+
+.item_description {
+    color: #787878;
+    font-size: 15px;
+}
+
+.item_price {
+    margin: 7px;
+    font-size: 24px;
+}

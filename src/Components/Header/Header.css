@@ -1,0 +1,80 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo {
+    width: 170px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.nav_item {
+    display: flex;
+    margin-right: 50px;
+}
+
+.cart-number {
+background-color: #f91944;
+color: #fff;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+font-size: 10px;
+}
+
+.nav_link {
+    border-radius: 30px;
+    color: #000000;
+    margin-right: 10px;
+    padding: 2px 13px;
+}
+
+.nav_btn:hover, .sign-up{
+    color: #ffffff;
+    background-color: #f91944;
+}
+
+.header {
+    background-image: url("https://i.ibb.co/4mpfG7F/bannerbackground.png");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_content {
+    text-align: center;
+    transform: translateY(-55px);
+}
+
+.header_input, .header_btn {
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+
+.header_input {
+    width: 300px;
+}
+
+.header_heading {
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.header_btn {
+    cursor: pointer;
+    background-color: #f91944;
+    color: #fff;
+    transform: translateX(-30px);
+    z-index: 100;
+}

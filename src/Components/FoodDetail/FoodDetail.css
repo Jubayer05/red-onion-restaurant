@@ -1,0 +1,45 @@
+.food-detail-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.food-detail-detail {
+    line-height: 25px;
+    margin: 10px 0;
+    color: #777777;
+}
+.food-detail-image {
+    width: 50%;
+    margin-left: 20px; 
+}
+
+.food-detail-price {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.item-number {
+    border: 1px solid #999999;
+    margin-left: 40px;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.item-value {
+    font-size: 18px;
+    padding: 0 10px;
+}
+.item-decrease, .item-increase {
+    font-weight: 100;
+}
+
+.food-detail-btn {
+    display: inline-block;
+    background-color: #f91944;
+    color: #ffffff;
+    padding: 10px 25px;
+    margin: 20px 0;
+    border-radius: 20px;
+}

@@ -1,0 +1,38 @@
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 50px;
+}
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-logo {
+    width: 100%;
+}
+.footer_image {
+    width: 200px;
+}
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+.footer-item {
+    line-height: 25px;
+}
+.footer-sub {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+.footer-link-container {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-copy {
+    width: 65%;
+    color: #999999;
+}

@@ -14,14 +14,13 @@
 
 // Images
 "https://i.ibb.co/BVbKgjX/2e123c1ab1e31167e08ac8a52daa377a.png" 
-"https://i.ibb.co/Hp87wp6/adult-blur-blurred-background-687824.png" 
-"https://i.ibb.co/FhFNdyx/architecture-building-city-2047397.png" 
+
 "https://i.ibb.co/LJZw0Ts/basil-blur-close-up-1437267.png" 
 "https://i.ibb.co/Y2MWr7W/blur-close-up-dairy-product-376464.png" 
 "https://i.ibb.co/km2hPwJ/brooke-lark-158019-unsplash.png" 
 "https://i.ibb.co/tDMjWgq/burrito-chicken-close-up-461198.png" 
 "https://i.ibb.co/LryLd2D/cheese-close-up-diet-61180.png" 
-"https://i.ibb.co/wN5z52k/chef-cook-food-33614.png"
+
 "https://i.ibb.co/LYrCmjx/edgar-castrejon-1-SPu0-KT-Ejg-unsplash.png" 
 "https://i.ibb.co/xCXnzyT/eduardo-roda-lopes-198465-unsplash.png"
 "https://i.ibb.co/9V2xDMD/Group-1151.png" 
@@ -34,3 +33,10 @@
 "https://i.ibb.co/4mpfG7F/bannerbackground.png" 
 "https://i.ibb.co/xD2h7Xh/logo.png" 
 "https://i.ibb.co/hMHf6tb/logo2.png" 
+
+
+
+// Image done 
+"https://i.ibb.co/Hp87wp6/adult-blur-blurred-background-687824.png" 
+"https://i.ibb.co/FhFNdyx/architecture-building-city-2047397.png" 
+"https://i.ibb.co/wN5z52k/chef-cook-food-33614.png"

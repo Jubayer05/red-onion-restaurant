@@ -35,7 +35,7 @@ const Home = () => {
             </div>
                 {foodInfo.foodPrice > 0 ?
                     <Link to="/review"><button className="checkout-btn active-btn">CheckOut Your Food</button></Link> :
-                    <button className="checkout-btn disable-btn">CheckOut Your Food</button>
+                    <button className="checkout-btn disable-btn">Checkout Your Food</button>
                 }
             </div>
             {/* service section */}

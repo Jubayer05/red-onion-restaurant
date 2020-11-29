@@ -33,6 +33,7 @@
 }
 .item-decrease, .item-increase {
     font-weight: 100;
+    cursor: pointer;
 }
 
 .food-detail-btn {

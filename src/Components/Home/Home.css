@@ -1,0 +1,20 @@
+.checkout-btn {
+    display: inline-block;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.active-btn {
+    background-color: #f91944;
+    color: #ffffff;
+}
+.disable-btn {
+    background-color: #bdbdbd;
+    color: #000000;
+}
+
+.food-container {
+    text-align: center;
+    padding-bottom: 50px;
+}

@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import FoodDetail from './Components/FoodDetail/FoodDetail';
 import { createContext, useState } from 'react';
 import Review from './Components/Review/Review';
+import Login from './Components/Login/Login';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Shipment from './Components/Shipment/Shipment';
 
 export const TestyFood = createContext();
 
@@ -22,6 +25,12 @@ function App() {
           </Route>
           <Route path="/review">
             <Review></Review>
+          </Route>
+          <PrivateRoute path="/shipment">
+            <Shipment></Shipment>
+          </PrivateRoute>
+          <Route path="/login">
+            <Login></Login>
           </Route>
           <Route exact path="/">
             <Home></Home>            

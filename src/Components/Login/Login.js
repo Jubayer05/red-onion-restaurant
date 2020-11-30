@@ -9,7 +9,8 @@ import { useHistory, useLocation } from 'react-router-dom';
 firebase.initializeApp(firebaseConfig);
 
 const Login = () => {
-    const [foodInfo, setFoodInfo] = useContext(TestyFood);
+    const {foodInfo} = useContext(TestyFood);
+    const [stateFoodInfo, setStateFoodInfo] = foodInfo;
 
     let history = useHistory();
     let location = useLocation();
@@ -48,7 +49,7 @@ const Login = () => {
         firebase.auth().signInWithEmailAndPassword(userInfo.email, userInfo.password)
         .then((user) => {
          console.log("Signed in successfully")
-         setFoodInfo({...foodInfo, email: userInfo.email});
+         setStateFoodInfo({...stateFoodInfo, email: userInfo.email});
          history.replace(from);
         })
         .catch((error) => {

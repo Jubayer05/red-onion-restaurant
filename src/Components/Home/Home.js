@@ -13,10 +13,9 @@ import "./Home.css";
 
 const Home = () => {
     const [paginate, setPaginate] = useState(breakfast);
-    const [foodInfo, setFoodInfo] =useContext(TestyFood);
-    const handleOrderFood = () => {
-        console.log("Food will be added to the order");
-    }
+    const {foodInfo, setFoodCollection} =useContext(TestyFood);
+    const [stateFoodInfo, setStateFoodInfo] = foodInfo;
+
     console.log(foodInfo);
     return (
         <>
@@ -33,8 +32,8 @@ const Home = () => {
                     paginate.map(el => <FoodItem data={el} key={el.id}></FoodItem>)
                 } 
             </div>
-                {foodInfo.foodPrice > 0 ?
-                    <Link to="/review"><button className="checkout-btn active-btn">CheckOut Your Food</button></Link> :
+                {stateFoodInfo.foodPrice > 0 ?
+                    <Link to="/shipment"><button className="checkout-btn active-btn">CheckOut Your Food</button></Link> :
                     <button className="checkout-btn disable-btn">Checkout Your Food</button>
                 }
             </div>

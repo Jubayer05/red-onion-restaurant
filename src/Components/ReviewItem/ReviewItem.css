@@ -1,0 +1,19 @@
+.review-item-value {
+    margin: 5px 0;
+}
+
+.reviewItem {
+    /* width: 270px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f2f5f9;
+}
+.review-img {
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+}

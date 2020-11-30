@@ -4,7 +4,8 @@ import { TestyFood } from '../../App';
 import "./FoodItem.css";
 
 const FoodItem = (props) => {
-    const [foodInfo, setFoodInfo] = useContext(TestyFood);
+    const {foodInfo, foodCollection} = useContext(TestyFood);
+    const [stateFoodInfo, setStateFoodInfo] = foodInfo;
     
     const {photoUrl, title, description, price, id} = props.data;
     
@@ -15,7 +16,7 @@ const FoodItem = (props) => {
             <h1 className="item_title">{title}</h1>
             <p className="item_description">{description}</p>
             <h3 className="item_price">${price}</h3>
-            <Link to={"/detail/"+id} onClick={() => setFoodInfo(props.data)}>Detail Info</Link>
+            <Link to={"/detail/"+id} onClick={() => setStateFoodInfo(props.data)}>Detail Info</Link>
         </div>
     );
 };

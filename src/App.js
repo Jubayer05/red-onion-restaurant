@@ -3,17 +3,22 @@ import Home from './Components/Home/Home';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import FoodDetail from './Components/FoodDetail/FoodDetail';
 import { createContext, useState } from 'react';
-import Review from './Components/Review/Review';
 import Login from './Components/Login/Login';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Shipment from './Components/Shipment/Shipment';
+import Contact from './Components/Contact/Contact';
 
 export const TestyFood = createContext();
 
 function App() {
     const [foodInfo, setFoodInfo] = useState([]);
+    const [foodCollection, setFoodCollection] = useState([]);
+    console.log(foodCollection);
   return (
-    <TestyFood.Provider value={[foodInfo, setFoodInfo]}>
+    <TestyFood.Provider value={{
+      foodInfo: [foodInfo, setFoodInfo],
+      foodCollection: [foodCollection, setFoodCollection]}}>
+
     <h1>Title: {foodInfo.title}</h1>
     <Router>
       <Switch>
@@ -23,14 +28,17 @@ function App() {
           <Route path="/detail/:id">
             <FoodDetail></FoodDetail>            
           </Route>
-          <Route path="/review">
-            <Review></Review>
-          </Route>
-          <PrivateRoute path="/shipment">
+          {/* <PrivateRoute path="/shipment">
             <Shipment></Shipment>
-          </PrivateRoute>
+          </PrivateRoute> */}
+          <Route path="/shipment">
+              <Shipment></Shipment>
+          </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
           </Route>
           <Route exact path="/">
             <Home></Home>            
